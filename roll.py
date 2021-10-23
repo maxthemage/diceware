@@ -2,54 +2,21 @@
 
 import time, os
 
+def check():
+    chars = ("|", "/", "—", "\\", "|", "|")
+    loading = "\rChecking data breaches..."
+    for i in range(len(chars)):
+        time.sleep(0.3)
+        print(loading+chars[i], end="")
+    print("\n")
+
 def roll():
     chars = ("|", "/", "—", "\\", "|", "|")
     loading = "\rRolling dice...."
     for i in range(len(chars)):
-        time.sleep(0.5)
+        time.sleep(0.35)
         print(loading+chars[i], end="")
     print("\n")
-
-def rollAnimation():
-    one = """
-    \r 
-    \r   •
-    \r 
-    """
-    two = """
-    \r•
-    \r
-    \r    •
-    """
-    three = """
-    \r•
-    \r  •
-    \r    •
-    """
-    four = """
-    \r•   •
-    \r
-    \r•   •
-    """
-    five =  """
-    \r•   •
-    \r  •
-    \r•   • 
-    """
-    six = """
-    \r•   •
-    \r•   •
-    \r•   •
-    """
-    
-    dice = [one, two, three, four, five, six]
-    for i in range(len(dice)):
-        #dice[i] = dice[i].replace("\n", "", 3)
-        print("\r"+dice[i], end="")
-        time.sleep(1)
-
-def osList():
-    print(os.listdir("assets"))
 
 def printLn():
     path = "assets/"
