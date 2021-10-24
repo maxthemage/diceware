@@ -8,7 +8,7 @@ diceware_banner = """
 \t\t    |____/|_|\___\___| \_/\_/ \__,_|_|  \___|
 """
 version = "\t\t\t\t   BETA Version\n"
-mainscreen_text = """\t\t\t\tCoded by: Gecko <3\n       Utility For Generating Secure Passphrases Using The Diceware Method
+mainscreen_text = """\t\t\t\tCoded by: Gecko \n       Utility For Generating Secure Passphrases Using The Diceware Method
 \t\t\t\t   BETA Version\n"""
 
 import secrets, math, os, time, sys
